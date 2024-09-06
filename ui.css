@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fa;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #fff;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    color: #4b7bec;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.pages {
+    margin-top: 30px;
+}
+
+.pages p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.settings {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.settings ul li {
+    margin: 15px 0;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.topbar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.ui-elements {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ui-elements h2 {
+    margin-top: 0;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chart {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.chart h3 {
+    margin-top: 0;
+}
+
+.chart-content {
+    height: 150px;
+    background-color: #e6eaf3;
+    border-radius: 8px;
+}
+
+.bar-chart {
+    /* Custom styles for bar chart */
+}
+
+.pie-chart {
+    /* Custom styles for pie chart */
+}
+
+.donut-chart {
+    /* Custom styles for donut chart */
+}

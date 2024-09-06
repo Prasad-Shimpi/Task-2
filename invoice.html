@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Page</title>
+    <link rel="stylesheet" href="invo.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Dash<span>Stack</span></h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="Product_Stocks.html">Products</a></li>
+                <li><a href="Favourites.html">Favorites</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li><a href="Order_Lists.html">Order Lists</a></li>
+                <li><a href="Product_Stocks.html">Product Stock</a></li>
+            </ul>
+            <h3>Pages</h3>
+            <ul>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Calender.html">Calender</a></li>
+                <li><a href="To-Do.html">To-Do</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="invoice.html">invoice</a></li>
+                <li><a href="UI_Elements.html">UI Elements</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Table.html">Table</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="topbar">
+            <input type="text" placeholder="Search">
+            <div class="profile">
+                <img src="profile-pic.jpg" alt="Profile Picture">
+                <span>Moni Roy</span>
+            </div>
+        </div>
+
+        <div class="invoice-section">
+            <h2>Invoice</h2>
+            <div class="invoice-details">
+                <div class="invoice-info">
+                    <p><strong>Invoice From :</strong> Virginia Walker<br>9694 Krajcik Locks Suite 635</p>
+                </div>
+                <div class="invoice-info">
+                    <p><strong>Invoice To :</strong> Austin Miller<br>Brookview</p>
+                </div>
+                <div class="invoice-info">
+                    <p><strong>Invoice Date :</strong> 12 Nov 2019<br><strong>Due Date :</strong> 25 Dec 2019</p>
+                </div>
+            </div>
+            <table class="invoice-table">
+                <thead>
+                    <tr>
+                        <th>Serial No.</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Base Cost</th>
+                        <th>Total Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Children Toy</td>
+                        <td>2</td>
+                        <td>$20</td>
+                        <td>$80</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Makeup</td>
+                        <td>2</td>
+                        <td>$50</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Asus Laptop</td>
+                        <td>5</td>
+                        <td>$100</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Iphone X</td>
+                        <td>4</td>
+                        <td>$1000</td>
+                        <td>$4000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="invoice-total">
+                <p><strong>Total =</strong> $4680</p>
+            </div>
+            <div class="invoice-actions">
+                <button class="btn print-btn">Print</button>
+                <button class="btn send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

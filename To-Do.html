@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F7FB;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: #FFFFFF;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            color: #4A4A4A;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .sidebar ul li a {
+            color: #4A4A4A;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar ul li a:hover {
+            color: #007BFF;
+        }
+
+        
+
+        /* Main content */
+        .main-content {
+            flex-grow: 1;
+            padding: 40px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .header .search-bar {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .header input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #CCCCCC;
+            padding-left: 30px;
+        }
+
+        .header .search-bar img {
+            position: absolute;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .user-info img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header .user-info span {
+            font-size: 16px;
+            color: #4A4A4A;
+        }
+
+        /* To-Do List */
+        .to-do-list {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .to-do-list h3 {
+            margin-bottom: 20px;
+            color: #4A4A4A;
+        }
+
+        .to-do-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #EEEEEE;
+        }
+
+        .to-do-item:last-child {
+            border-bottom: none;
+        }
+
+        .to-do-item .task {
+            display: flex;
+            align-items: center;
+        }
+
+        .to-do-item input[type="checkbox"] {
+            margin-right: 15px;
+        }
+
+        .to-do-item .task span {
+            font-size: 16px;
+            color: #4A4A4A;
+        }
+
+        .to-do-item .actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .to-do-item .actions button {
+            background: none;
+            border: none;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .to-do-item .actions button img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .to-do-item .actions .star img {
+            filter: grayscale(1);
+        }
+
+        .to-do-item .actions .star.active img {
+            filter: none;
+        }
+
+        .add-task-btn {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .add-task-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>DashStack</h2>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+                <li><a href="Product_Stocks.html">Products</a></li>
+                <li><a href="Favourites.html">Favorites</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li><a href="Order_Lists.html">Order Lists</a></li>
+                <li><a href="Product_Stocks.html">Product Stock</a></li>
+            </ul>
+            <h3>Pages</h3>
+            <ul>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Calender.html">Calender</a></li>
+                <li><a href="To-Do.html">To-Do</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="invoice.html">invoice</a></li>
+                <li><a href="UI_Elements.html">UI Elements</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Table.html">Table</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <img src="search-icon.png" alt="Search Icon">
+            </div>
+            <div class="user-info">
+                <img src="user-icon.png" alt="User Icon">
+                <span>Moni Roy</span>
+            </div>
+        </div>
+
+        <div class="to-do-list">
+            <h3>To-Do List</h3>
+            <div class="to-do-item">
+                <div class="task">
+                    <input type="checkbox">
+                    <span>Meeting with CEO</span>
+                </div>
+                <div class="actions">
+                    <button class="star"><img src="star-icon.png" alt="Star Icon"></button>
+                    <button><img src="delete-icon.png" alt="Delete Icon"></button>
+                </div>
+            </div>
+            <div class="to-do-item">
+                <div class="task">
+                    <input type="checkbox">
+                    <span>Pick up kids from school</span>
+                </div>
+                <div class="actions">
+                    <button class="star active"><img src="star-icon.png" alt="Star Icon"></button>
+                    <button><img src="delete-icon.png" alt="Delete Icon"></button>
+                </div>
+            </div>
+            <div class="to-do-item">
+                <div class="task">
+                    <input type="checkbox">
+                    <span>Shopping with Brother</span>
+                </div>
+                <div class="actions">
+                    <button class="star"><img src="star-icon.png" alt="Star Icon"></button>
+                    <button><img src="delete-icon.png" alt="Delete Icon"></button>
+                </div>
+            </div>
+            <div class="to-do-item">
+                <div class="task">
+                    <input type="checkbox" checked>
+                    <span>Review with HR</span>
+                </div>
+                <div class="actions">
+                    <button class="star"><img src="star-icon.png" alt="Star Icon"></button>
+                    <button><img src="delete-icon.png" alt="Delete Icon"></button>
+                </div>
+            </div>
+            <div class="to-do-item">
+                <div class="task">
+                    <input type="checkbox">
+                    <span>Going to Dia's School</span>
+                </div>
+                <div class="actions">
+                    <button class="star"><img src="star-icon.png" alt="Star Icon"></button>
+                    <button><img src="delete-icon.png" alt="Delete Icon"></button>
+                </div>
+            </div>
+            <div class="to-do-item">
+                <div class="task">
+                    <input type="checkbox">
+                    <span>Check design files</span>
+                </div>
+                <div class="actions">
+                    <button class="star"><img src="star-icon.png" alt="Star Icon"></button>
+                    <button><img src="delete-icon.png" alt="Delete Icon"></button>
+                </div>
+            </div>
+            <div class="to-do-item">
+                <div class="task">
+                    <input type="checkbox">
+                    <span>Update File</span>
+                </div>
+                <div class="actions">
+                    <button class="star"><img src="star-icon.png" alt="Star Icon"></button>
+                    <button><img src="delete-icon.png" alt="Delete Icon"></button>
+                </div>
+            </div>
+            <a href="#" class="add-task-btn">Add New Task</a>
+        </div>
+    </div>
+</body>
+</html>

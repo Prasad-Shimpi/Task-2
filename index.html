@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <img src="Logo.jpeg">
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="Product_Stocks.html">Products</a></li>
+                <li><a href="Favourites.html">Favorites</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li><a href="Order_Lists.html">Order Lists</a></li>
+                <li><a href="Product_Stocks.html">Product Stock</a></li>
+
+                <hr>
+
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Calender.html">Calender</a></li>
+                <li><a href="#">To-Do</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">invoice</a></li>
+                <li><a href="#">UI Elements</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Table</a></li>
+                            
+                <hr>
+
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content -->
+        <div class="main-content">
+            <header class="top-bar">
+                <input type="text" placeholder="Search">
+
+                <div class="user-flag">
+                    <img src="Flag.jpg" >
+                </div>
+
+                <div class="user-info">
+                    <img src="profile.png" alt="User">
+                    <span>Moni Roy</span>
+                </div>
+            </header>
+            <div class="dashboard">
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>Total Users</h3>
+                        <p>40,689</p>
+                        <span>8.5% Up from yesterday</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Order</h3>
+                        <p>10,293</p>
+                        <span>1.3% Up from past week</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Sales</h3>
+                        <p>$89,000</p>
+                        <span>4.3% Down from yesterday</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Pending</h3>
+                        <p>2,040</p>
+                        <span>1.8% Up from yesterday</span>
+                    </div>
+                </div>
+                <!-- Sales Details Chart -->
+                <div class="sales-chart">
+                    <h3>Sales Details</h3>
+                    <div id="chart"></div>
+                </div>
+                <!-- Details Table -->
+                <div class="details-table">
+                    <h3>Deals Details</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Location</th>
+                                <th>Date - Time</th>
+                                <th>Pieces</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Apple Watch</td>
+                                <td>6096 Marjolaine Landing</td>
+                                <td>12.09.2019 - 12.53 PM</td>
+                                <td>423</td>
+                                <td>$34,295</td>
+                                <td>Delivered</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

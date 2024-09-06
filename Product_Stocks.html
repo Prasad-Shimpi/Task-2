@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Stock</title>
+    <link rel="stylesheet" href="stock.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>DashStack</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                <li><a href="Product_Stocks.html">Products</a></li>
+                <li><a href="Favourites.html">Favorites</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li><a href="Order_Lists.html">Order Lists</a></li>
+                <li><a href="Product_Stocks.html">Product Stock</a></li>
+            </ul>
+            <h3>Pages</h3>
+            <ul>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Calender.html">Calender</a></li>
+                <li><a href="To-Do.html">To-Do</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="invoice.html">invoice</a></li>
+                <li><a href="UI_Elements.html">UI Elements</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Table.html">Table</a></li>
+                </ul>
+            </nav>
+            <div class="settings">
+                <ul>
+                    <li>Settings</li>
+                    <li>Logout</li>
+                </ul>
+            </div>
+        </aside>
+        <main class="content">
+            <header class="topbar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search product name">
+                </div>
+                <div class="user-profile">
+                    <span class="notification-icon">🔔</span>
+                    <span class="language">English</span>
+                    <div class="user-info">
+                        <span class="user-name">Moni Roy</span>
+                        <span class="user-role">Admin</span>
+                    </div>
+                </div>
+            </header>
+            <section class="product-stock">
+                <h1>Product Stock</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Piece</th>
+                            <th>Available Color</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="apple-watch.jpg" alt="Apple Watch Series 4"></td>
+                            <td>Apple Watch Series 4</td>
+                            <td>Digital Product</td>
+                            <td>$690.00</td>
+                            <td>63</td>
+                            <td class="colors">
+                                <span class="color-circle black"></span>
+                                <span class="color-circle pink"></span>
+                                <span class="color-circle gray"></span>
+                            </td>
+                            <td class="actions">
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="microsoft-headsquare.jpg" alt="Microsoft HeadSquare"></td>
+                            <td>Microsoft HeadSquare</td>
+                            <td>Digital Product</td>
+                            <td>$190.00</td>
+                            <td>13</td>
+                            <td class="colors">
+                                <span class="color-circle black"></span>
+                                <span class="color-circle blue"></span>
+                                <span class="color-circle red"></span>
+                                <span class="color-circle yellow"></span>
+                            </td>
+                            <td class="actions">
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="womens-dress.jpg" alt="Women's Dress"></td>
+                            <td>Women's Dress</td>
+                            <td>Fashion</td>
+                            <td>$640.00</td>
+                            <td>635</td>
+                            <td class="colors">
+                                <span class="color-circle red"></span>
+                                <span class="color-circle blue"></span>
+                                <span class="color-circle dark-blue"></span>
+                            </td>
+                            <td class="actions">
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <!-- Add more rows as necessary -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
